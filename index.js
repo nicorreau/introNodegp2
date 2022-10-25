@@ -1,31 +1,24 @@
+//console.log("Hello world!");
 const axios = require("axios");
-console.log("Hello World");
 
-let apiKey = "8e6330a78aa20b41b54f3fcaa3e9994f";
-let city = "Bogota, col";
+let urlCompleted =
+    "https://api.openweathermap.org/data/2.5/weather?q=Bogota, col&appid=a928f62e35665327a1a19dfb07fe6f78";
 
 let requestConfig = {
-    url:
-        "https://api.openweathermap.org/data/2.5/weather?q=" +
-        city +
-        "&appid=" +
-        apiKey,
+    url: urlCompleted,
 };
-
-console.log(requestConfig);
 
 let objPromesa = axios(requestConfig);
 
 objPromesa
-    .then(function (response) {
-        //response.data -> son los datos que envia la API
+    .then((result) => {
         console.log(
-            "La temperatura en Bogota, Colombia, es: " +
-                (response.data.main.temp - 273.15).toFixed(2).toString() +
+            "La temperatura en Bogota es: " +
+                (result.data.main.temp - 273.15) +
                 " Grados celcius"
         );
     })
-    .catch(function (err) {
+    .catch((err) => {
         console.log(err);
     });
 
