@@ -1,9 +1,13 @@
 //console.log("Hello world!");
 const axios = require("axios");
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 //console.log("Hello World");
 >>>>>>> 8dbe42d (update)
+=======
+console.log("Hello World");
+>>>>>>> 34246f7 (update)
 
 let urlCompleted =
     "https://api.openweathermap.org/data/2.5/weather?q=Bogota, col&appid=a928f62e35665327a1a19dfb07fe6f78";
@@ -13,8 +17,12 @@ let requestConfig = {
 };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 //console.log(requestConfig);
+=======
+console.log(requestConfig);
+>>>>>>> 34246f7 (update)
 
 >>>>>>> 8dbe42d (update)
 let objPromesa = axios(requestConfig);
@@ -30,6 +38,7 @@ objPromesa
     .catch((err) => {
         console.log(err);
     });
+<<<<<<< HEAD
 
 
 
@@ -110,3 +119,5 @@ reqPromise1
     });
 
 console.log("Finalizando programa"); */
+=======
+>>>>>>> 34246f7 (update)
