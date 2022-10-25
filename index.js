@@ -1,5 +1,9 @@
 //console.log("Hello world!");
 const axios = require("axios");
+<<<<<<< HEAD
+=======
+//console.log("Hello World");
+>>>>>>> 8dbe42d (update)
 
 let urlCompleted =
     "https://api.openweathermap.org/data/2.5/weather?q=Bogota, col&appid=a928f62e35665327a1a19dfb07fe6f78";
@@ -8,6 +12,11 @@ let requestConfig = {
     url: urlCompleted,
 };
 
+<<<<<<< HEAD
+=======
+//console.log(requestConfig);
+
+>>>>>>> 8dbe42d (update)
 let objPromesa = axios(requestConfig);
 
 objPromesa
